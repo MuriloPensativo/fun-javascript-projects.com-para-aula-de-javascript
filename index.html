@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Music Player</title>
+        <link href="./style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="reprodutor">
+            <img src="./disco.gif" class="disco" id="disco">
+
+            <audio id="reprodutor" ontimeupdate="atualizarProgresso()">
+                <source id="source">
+                O tipo de arquivo não é suportado.
+            </audio>
+
+            <progress id="progress" value="0" max="100"></progress>
+
+            <div id="controles">
+                <p id="musicaAtual"></p>
+                <div class="tocarPausar">
+                    <span onclick="tocarMusica()">&#9658;</span>
+                    <span onclick="pausarMusica()">&#10074;&#10074;</span>
+                </div>
+
+                <p>Volume:</p>
+                <div class="volume">
+                    <span>- </span>
+                    <input type="range" id="regularVolume" min="0" max="1" step="0.05">
+                    <span> +</span>
+                </div>
+            </div>
+
+            <h2> Way Back A Year Ago: </h2>
+            <div id="listaMusicas"></div>
+            <p> Músicas usadas no Trabalho: <a href="https://youtube.com/playlist?list=PL0lEyxEcf4mb92yuIBPDvhT5ZNkilHx8S" target="_blank"> https://www.youtube.com/ </a> </p>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
