@@ -1,22 +1,22 @@
 let musicas = [
-    "bringmethehorizon-canyoufeelmyheart.mp3",
-    "caleb-12am.mp3",
-    "conangray-maniac.mp3",
-    "daftpunk-aerodynamic.mp3",
-    "daftpunk-voyager.mp3",
-    "harrystyles-she.mp3",
-    "home-resonance.mp3",
-    "home-werefinallylanding.mp3",
-    "katebush-runningupthathill.mp3",
-    "kavinsky-zenith.mp3",
-    "madonna-intothegroove.mp3",
-    "marshmello-rescueme.mp3",
-    "melaniemartinez-lunchboxfriends.mp3",
-    "neffex-scars.mp3",
-    "pregadorluo-unicoincomparavel.mp3",
+    "12am.mp3",
+    "aerodynamic.mp3",
+    "into-the-groove.mp3",
+    "lunchbox-friends.mp3",
+    "maniac.mp3",
+    "new-beginnings.mp3",
+    "ok-not-to-be-ok.mp3",
+    "rescue-me.mp3",
+    "resonance.mp3",
+    "running-up-that-hill.mp3",
+    "she.mp3",
+    "único-incomparável.mp3",
+    "voyager.mp3",
+    "we're-finally-landing.mp3",
+    "zenith.mp3",
 ];
 let reprodutor = document.getElementById("reprodutor");
-  
+
 let criaListaMusicas = () => {
     let lista = document.createElement("ol");
 

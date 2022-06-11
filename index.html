@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Music Player</title>
-        <link href="./style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <title> Reprodutor de Música </title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="imagens/nota.ico">
     </head>
 
     <body>
         <div class="reprodutor">
-            <img src="./disco.gif" class="disco" id="disco">
+            <img src="imagens/disco.png" class="disco" id="disco">
 
             <audio id="reprodutor" ontimeupdate="atualizarProgresso()">
                 <source id="source">
@@ -38,6 +38,17 @@
             <h2> Way Back A Year Ago: </h2>
             <div id="listaMusicas"></div>
             <p> Músicas usadas no Trabalho: <a href="https://youtube.com/playlist?list=PL0lEyxEcf4mb92yuIBPDvhT5ZNkilHx8S" target="_blank"> https://www.youtube.com/ </a> </p>
+
+            <br><br>
+
+            <div class="info">
+                <h1> Sobre a Equipe: </h1>
+                <p>
+                    Somos estudantes do IFCE Campus Fortaleza, no 3º Período do Curso Técnico Integrado em
+                    Informática. A equipe é composta por <a href="https://github.com/JGabrielJ" target="_blank">João Gabriel</a>, 
+                    <a href="https://github.com/caioo1" target="_blank">Caio Vieira</a> e <a href="https://github.com/MuriloPensativo" target="_blank">Murilo Rodrigues</a>.
+                </p>
+            </div>
         </div>
 
         <script src="./script.js"></script>
