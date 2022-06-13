@@ -15,6 +15,62 @@ let musicas = [
     "we're-finally-landing.mp3",
     "zenith.mp3",
 ];
+var mum = [$12am, aerodynamic, intothegroove, lunchboxfriends
+let $12am{
+    Name: "12am"
+    Song: "12am.mp3"
+};
+let aerodynamic{
+    Name: "Aerodynamic"
+    Song: "aerodynamic.mp3"
+};
+let intothegroove{
+    Name: "Into the Groove"
+    Song: "into-the-groove.mp3"
+};
+let lunchboxfriends{
+    Name: "Lunchbox Friends"
+    Song: "lunchbox-friends.mp3"
+};
+let maniac{
+    Name: "Maniac"
+    Song: "maniac.mp3"
+};
+let newbeginnings{
+    Name: "New Beginnings"
+    Song: "new-beginnings.mp3"
+};
+let oknottobeok{
+    Name: "Ok not to be ok"
+    Song: "ok-not-to-be-ok.mp3"
+};
+let rescueme{
+    Name: "Rescue me"
+    Song: "rescue-me.mp3"
+};
+let resonance{
+    Name: "Resonance"
+    Song: "resonance.mp3"
+};
+let runningupthathill{
+    Name: "Running Up that Hill"
+    Song: "running-up-that-hill.mp3"
+};
+let she{
+    Name: "She"
+    Song: "she.mp3"
+};
+let unicoimcomparavel{
+    Name: "Único imcomprarável"
+    Song: "único-incomparável.mp3"
+};
+let voyager{
+    Name: "Voyager"
+    Song: "voyager.mp3"
+};
+    
+
+    
 let reprodutor = document.getElementById("reprodutor");
 
 let criaListaMusicas = () => {
