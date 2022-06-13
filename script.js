@@ -42,7 +42,7 @@ function selecionarMusica(e) {
 
     let source = document.getElementById("source");
     source.src = "musicas/" + e.target.innerText;
-    document.getElementById("musicaAtual").innerText = `Tocando agora: ${e.target.innerText}`;
+    document.getElementById("musicaAtual").innerText = `Está tocando: ${e.target.innerText.substr(0, e.target.innerText.length - 4)}`;
 
     reprodutor.load();
     reprodutor.play();
