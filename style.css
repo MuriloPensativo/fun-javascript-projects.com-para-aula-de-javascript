@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
+@font-face {
+    font-family: 'StrangerThings-Regular';
+    src: url('StrangerThings-Regular.ttf') format('truetype');
+  }
+
 html {
     font-size: 10px;
-    font-family: "Permanent Marker", cursive;
+    font-family: 'StrangerThings-Regular', Arial, Helvetica, sans-serif;
     letter-spacing: 4px;
 }
 
@@ -16,10 +21,20 @@ body {
     text-align: center;
 }
 
+h2{
+    font-family: 'StrangerThings-Regular', Arial, Helvetica, sans-serif;
+    color: yellowgreen;
+}
+
 .reprodutor {
     background: radial-gradient(#211e24, #4f3341);
     padding: 2rem;
     border-radius: 2rem;
+}
+
+#listaMusicas{
+    font-family: 'StrangerThings-Regular', Arial, Helvetica, sans-serif;
+    color: yellow;
 }
 
 img {
