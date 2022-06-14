@@ -1,19 +1,7 @@
 let musicas = [
-    {Name: "12AM", Song: "12am.mp3"},
-    {Name: "Aerodynamic", Song: "aerodynamic.mp3"},
-    {Name: "Into the Groove", Song: "into-the-groove.mp3"},
-    {Name: "Lunchbox Friends", Song: "lunchbox-friends.mp3"},
-    {Name: "Maniac", Song: "maniac.mp3"},
-    {Name: "New Beginnings", Song: "new-beginnings.mp3"},
-    {Name: "OK Not To Be OK", Song: "ok-not-to-be-ok.mp3"},
-    {Name: "Rescue Me", Song: "rescue-me.mp3"},
-    {Name: "Resonance", Song: "resonance.mp3"},
-    {Name: "Running Up that Hill", Song: "running-up-that-hill.mp3"},
-    {Name: "She", Song: "she.mp3"},
-    {Name: "Único Incomparável", Song: "único-incomparável.mp3"},
-    {Name: "Voyager", Song: "voyager.mp3"},
-    {Name: "We're Finally Landing", Song: "we're-finally-landing.mp3"},
-    {Name: "Zenith", Song: "zenith.mp3"}
+    "12AM", "Aerodynamic", "Into the Groove", "Lunchbox Friends", "Maniac",
+    "New Beginnings", "OK Not To Be OK", "Rescue Me", "Resonance", "Running Up That Hill",
+    "She", "Único Incomparável", "Voyager", "We're Finally Landing", "Zenith"
 ];
 let reprodutor = document.getElementById("reprodutor");
 
@@ -22,7 +10,7 @@ let criaListaMusicas = () => {
 
     for (let i = 0; i < musicas.length; i++) {
         let item = document.createElement("li");
-        item.appendChild(document.createTextNode(musicas[i].Name));
+        item.appendChild(document.createTextNode(musicas[i]));
         lista.appendChild(item);
     };
 
