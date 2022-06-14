@@ -41,7 +41,7 @@ function selecionarMusica(e) {
     document.querySelector("#disco").classList.remove("pulse");
 
     let source = document.getElementById("source");
-    source.src = "músicas/" + e.target.innerText + ".mp3";
+    source.src = "músicass/" + e.target.innerText + ".mp3";
     document.getElementById("musicaAtual").innerText = `Está tocando: ${e.target.innerText}`;
 
     reprodutor.load();
