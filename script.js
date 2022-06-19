@@ -25,6 +25,8 @@ for (let link of links) {
     link.addEventListener("click", selecionarMusica);
 };
 
+var lafesta;
+
 function selecionarMusica(e) {
     document.querySelector("#disco").classList.remove("pulse");
 
@@ -36,16 +38,23 @@ function selecionarMusica(e) {
     reprodutor.play();
 
     document.querySelector("#disco").classList.add("pulse");
+
+    clearInterval(lafesta)
+    lafesta = setInterval(festa, 500)
 };
 
 function tocarMusica() {
     if (reprodutor.readyState) {
         reprodutor.play();
+        clearInterval(lafesta)
+        lafesta = setInterval(festa, 500)
     };
 };
 
 function pausarMusica() {
     reprodutor.pause();
+    clearInterval(lafesta)
+    document.body.style.background = "linear-gradient(#3b3b3b, #2b2b2b)";
 };
 
 let regulador = document.getElementById("regularVolume");
@@ -65,3 +74,12 @@ let barraProgresso = document.getElementById("progress");
 barraProgresso.addEventListener("click", (e) => {
     reprodutor.currentTime = (e.offsetX / barraProgresso.clientWidth) * reprodutor.duration;
 });
+
+function random(numero) {
+    return Math.floor(Math.random()*(numero+1));
+}
+
+function festa() {
+    var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+    document.body.style.background = rndCol;
+}
